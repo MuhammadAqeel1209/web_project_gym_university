@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Nav Bar Classes  */
+.Nav{
+    @apply p-5 cursor-pointer hover:text-red-600 text-white
+}
+/* Home Page Classes */
+#homep{
+    @apply text-white italic text-center m-4 mb-6 max-w-lg mx-auto
+}
+
+
+/* About Page Classes */
+.about{
+    @apply justify-center flex flex-col text-center gap-3 p-7
+}
+
+.featureDiv{
+    @apply grid grid-cols-1 mb-16 p-7 md:grid-cols-2 lg:grid-cols-4
+}
+
+.featurekey{
+    @apply flex flex-col border gap-4 justify-center items-center p-2 m-5
+}
+
+.featureIcons{
+    @apply text-4xl bg-black text-white w-[70px] h-[70px] rounded-full flex justify-center items-center mb-5
+}
+
+.featureTextSub{
+    @apply pb-4 flex flex-col text-center justify-center items-center
+}
+
+.aboutAcheive{
+    @apply flex flex-col justify-center items-center 
+}
+
+.aboutAcheiveCircle{
+    @apply border border-red-800 rounded-full w-[100px] h-[100px] p-3 mb-4
+}
+
+/* Price Page  */
+.bg-price{
+    background-image: url('/assets/img/membership/bg.jpg');
+    /* height:max-content; */
+}
+
+/* Contact Page  */
+/* Animation On Modal Login Page  */
+@keyframes slideInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.btnModal{
+    @apply py-2 px-10 rounded-full bg-gray-700 text-white m-3 hover:bg-red-600
+}
+  .animate-slideInDown {
+    animation: slideInDown 0.5s ease-out forwards;
+  }
+.contactDiv{
+    @apply flex justify-center items-center w-full
+}
+
+.contactField{
+    @apply rounded-xl p-2 w-96 text-center font-bold text-black hover:bg-black/50 hover:text-white md:w-2/4 pr-[-6]
+}
+
+/* Heading Tags Classes  */
+h1{
+    @apply  text-white tracking-[-3px] lg:text-[125px] text-3xl md:text-5xl font-bold mb-4
+}
+
+h2{
+    @apply uppercase font-extrabold text-3xl md:text-4xl
+}
+
+h3{
+    @apply  font-bold uppercase lg:text-3xl
+}
+
+/* Utility Classes  */
+
+.getStart{
+    @apply bg-red-700 h-[60px] w-[186px] rounded-lg uppercase font-bold text-white hover:bg-black
+   py-2 px-6 text-lg transition duration-300}
+
+
+/* Footer Class  */
+.footer{
+    @apply mx-auto flex flex-col md:flex-row justify-between items-center
+    
+    
+
+}
+
+.footericon {
+    @apply text-red-600 m-1
+}
+
+.footerLi{
+    @apply flex items-center p-2 md:p-3
+}
+
+.footertxt{
+    @apply text-sm
+   
+}  
