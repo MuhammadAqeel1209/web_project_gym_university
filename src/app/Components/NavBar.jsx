@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "./Modal";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; 
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image"; // Import the Image component
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +31,13 @@ const NavBar = () => {
         <div className="flex justify-between items-center w-full md:w-auto">
           <div className="mt-3 h-14">
             <Link href="/">
-              <img
-                src="/assets/img/logo.png"
-                alt="Logo"
-                className="w-24 h-auto"
+              {/* Replace <img> with <Image /> */}
+              <Image
+                src="/assets/img/logo.png" // Path to your image
+                alt="Logo" // Alt text for accessibility
+                width={96} // Desired width
+                height={56} // Desired height
+                className="w-24 h-auto" // Additional styling
               />
             </Link>
           </div>
